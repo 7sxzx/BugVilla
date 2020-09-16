@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 const TooltipWrapper = styled.div`
   position: relative;
+  cursor: pointer;
+
   .tooltip--content {
     position: absolute;
     width: max-content;
@@ -19,16 +21,17 @@ const TooltipWrapper = styled.div`
     opacity: 0;
     text-align: center;
     pointer-events: none;
+    transition: 0.3s;
   }
 
   &:hover .tooltip--content {
     opacity: 1;
     pointer-events: all;
+    transition: 0.3s;
   }
 `;
 
 interface TooltipProps {
-  children: React.ReactNode;
   content: React.ReactNode;
   [x: string]: any;
 }

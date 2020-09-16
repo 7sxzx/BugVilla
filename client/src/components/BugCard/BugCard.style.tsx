@@ -21,6 +21,7 @@ export const StyledBugCard = styled.div`
     font-family: ${p => p.theme.font.primaryMedium};
     line-height: 1.3em;
     margin-bottom: 10px;
+    word-break: break-all;
 
     @media screen and (${p => p.theme.media.tablet}) {
       font-size: 1.4em;
